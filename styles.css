@@ -1,0 +1,76 @@
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+}
+
+header {
+    position: relative;
+}
+
+#sidebar {
+    width: 250px;
+    position: fixed;
+    top: 56px;
+    height: calc(100vh - 56px);
+    overflow-y: auto;
+}
+
+#main-content {
+    margin-left: 250px;
+    padding-left: 30px;
+}
+
+h2 {
+    color: #ffc107; /* Yellow color for headings */
+}
+
+.contact p,
+.social-links a {
+    font-size: 14px;
+}
+
+.social-links a {
+    margin-bottom: 10px;
+    display: inline-block;
+}
+
+.bg-secondary {
+    background-color: #343a40 !important;
+}
+
+#projects,
+#blogs {
+    padding-top: 30px;
+}
+
+.card {
+    background-color: #343a40;
+    border: none;
+    transition: transform 0.2s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.btn-download {
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.btn-download:hover {
+    background-color: #e0a800;
+    transform: scale(1.05);
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    #sidebar {
+        width: 100%;
+        position: relative;
+        height: auto;
+    }
+    #main-content {
+        margin-left: 0;
+        padding-left: 0;
+    }
+}
